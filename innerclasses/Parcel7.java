@@ -14,5 +14,6 @@ public class Parcel7 {
   public static void main(String[] args) {
     Parcel7 p = new Parcel7();
     Contents c = p.contents();
+    System.out.println(c.value());
   }
 }

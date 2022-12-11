@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // The common methods for any control event
-package innerclasses.controller;
+package controller;
 import java.time.*; // Java 8 time classes
 
 public abstract class Event {

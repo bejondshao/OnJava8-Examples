@@ -21,11 +21,14 @@ public class UnboundMethodReference {
     // MakeString ms = X::f;                // [1]
     TransformX sp = X::f;
     X x = new X();
+    MakeString ms = x::f;
     System.out.println(sp.transform(x));    // [2]
     System.out.println(x.f()); // Same effect
+    System.out.println(ms.make()); // Same effect
   }
 }
 /* Output:
+X::f()
 X::f()
 X::f()
 */

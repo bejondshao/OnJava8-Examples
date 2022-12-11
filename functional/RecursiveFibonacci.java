@@ -6,9 +6,7 @@
 public class RecursiveFibonacci {
   IntCall fib;
   RecursiveFibonacci() {
-    fib = n -> n == 0 ? 0 :
-               n == 1 ? 1 :
-               fib.call(n - 1) + fib.call(n - 2);
+    fib = n -> n < 2 ? n : fib.call(n - 1) + fib.call(n - 2);
   }
   int fibonacci(int n) { return fib.call(n); }
   public static void main(String[] args) {

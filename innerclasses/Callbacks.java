@@ -15,13 +15,13 @@ class Callee1 implements Incrementable {
   private int i = 0;
   @Override public void increment() {
     i++;
-    System.out.println(i);
+    System.out.println("Callee1: " + i);
   }
 }
 
 class MyIncrement {
   public void increment() {
-    System.out.println("Other operation");
+    System.out.println("Other operation. " + this.getClass());
   }
   static void f(MyIncrement mi) { mi.increment(); }
 }
@@ -33,7 +33,7 @@ class Callee2 extends MyIncrement {
   @Override public void increment() {
     super.increment();
     i++;
-    System.out.println(i);
+    System.out.println("Callee2: " + i);
   }
   private class Closure implements Incrementable {
     @Override public void increment() {
@@ -70,12 +70,12 @@ public class Callbacks {
   }
 }
 /* Output:
-Other operation
-1
-1
-2
-Other operation
-2
-Other operation
-3
+Other operation. class innerclasses.Callee2
+Callee2: 1
+Callee1: 1
+Callee1: 2
+Other operation. class innerclasses.Callee2
+Callee2: 2
+Other operation. class innerclasses.Callee2
+Callee2: 3
 */

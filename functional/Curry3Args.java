@@ -9,13 +9,16 @@ public class Curry3Args {
       Function<String,
         Function<String,
           Function<String, String>>> sum =
-            a -> b -> c -> a + b + c;
+            a -> (b -> (c -> a + b + c));
       Function<String,
         Function<String, String>> hi =
-          sum.apply("Hi ");
+          sum.apply("Hi "); /* sum.apply("Hi ") means input "Hi ",
+           output Function<String, Function<String, String>>, assign to function "hi" */
       Function<String, String> ho =
-        hi.apply("Ho ");
-      System.out.println(ho.apply("Hup"));
+        hi.apply("Ho "); /* hi.apply("Ho ") means input "Ho ",
+        output Function<String, String>, assign to function "ho" */
+      System.out.println(ho.apply("Hup")); /* ho.apply("Hup") means input "Hup",
+       output String, the result is a + b + c */
    }
 }
 /* Output:

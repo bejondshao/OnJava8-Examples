@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // The reusable framework for control systems
-package innerclasses.controller;
+package controller;
 import java.util.*;
 
 public class Controller {

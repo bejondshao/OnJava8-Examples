@@ -11,11 +11,17 @@ public class ProduceFunction {
   static FuncSS produce() {
     return s -> s.toLowerCase();             // [2]
   }
+  static Function<String, String> cs = String::toLowerCase;  // consume function
+
   public static void main(String[] args) {
     FuncSS f = produce();
     System.out.println(f.apply("YELLING"));
+    System.out.println(cs.apply("ABC"));
   }
+
+
 }
 /* Output:
 yelling
+abc
 */

@@ -8,6 +8,10 @@ public class TriFunctionTest {
   public static void main(String[] args) {
     TriFunction<Integer, Long, Double, Integer> tf =
       TriFunctionTest::f;
-    tf = (i, l, d) -> 12;
+    TriFunction<Integer, Long, Double, Integer> tf2 = (i, l, d) -> 12;
+    int c = tf.apply(1, 1L, 2D);
+    int c2 = tf2.apply(1, 1L, 2D);
+    System.out.println(c);
+    System.out.println(c2);
   }
 }

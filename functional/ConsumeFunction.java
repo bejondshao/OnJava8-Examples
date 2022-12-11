@@ -13,5 +13,6 @@ public class ConsumeFunction {
   }
   public static void main(String[] args) {
     Two two = consume(one -> new Two());
+    System.out.println(two);
   }
 }
