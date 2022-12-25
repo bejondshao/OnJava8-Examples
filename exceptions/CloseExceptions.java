@@ -47,3 +47,4 @@ Closing Closer
 Closing First
 Caught: CloseException
 */
+// Object s is created in try-with, so even though exception thrown in close() method, close() of s would still be called

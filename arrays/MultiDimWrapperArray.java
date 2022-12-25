@@ -27,6 +27,8 @@ public class MultiDimWrapperArray {
       "a2: " + Arrays.deepToString(a2));
     System.out.println(
       "a3: " + Arrays.deepToString(a3));
+    System.out.println("a3[2][1]: " + a3[2][1]);
+    System.out.println("a3[2]: " + Arrays.toString(a3[2]));
   }
 }
 /* Output:
@@ -35,4 +37,6 @@ a2: [[[1.1, 2.2], [3.3, 4.4]], [[5.5, 6.6], [7.7,
 8.8]], [[9.9, 1.2], [2.3, 3.4]]]
 a3: [[The, Quick, Sly, Fox], [Jumped, Over], [The,
 Lazy, Brown, Dog, &, friend]]
+a3[2][1]: Lazy
+a3[2]: [The, Lazy, Brown, Dog, &, friend]
 */

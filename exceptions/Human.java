@@ -21,11 +21,11 @@ public class Human {
     try {
       throw new Sneeze();
     } catch(Annoyance a) {
-      System.out.println("Caught Annoyance");
+      System.out.println("Caught Annoyance2");
     }
   }
 }
 /* Output:
 Caught Sneeze
-Caught Annoyance
+Caught Annoyance2
 */

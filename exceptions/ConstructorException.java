@@ -31,3 +31,4 @@ Creating SecondExcept
 Closing First
 Caught: CE
 */
+// Notice that there's no "Closing Second" because of exception is thrown in constructor of SecondException

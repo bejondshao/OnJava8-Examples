@@ -10,10 +10,10 @@ public class StreamsAreAutoCloseable {
   public static void
   main(String[] args) throws IOException{
     try(
-      Stream<String> in = Files.lines(
-        Paths.get("StreamsAreAutoCloseable.java"));
-      PrintWriter outfile = new PrintWriter(
-        "Results.txt");                         // [1]
+            Stream<String> in = Files.lines(
+        Paths.get(Constants.BASE_PATH + "StreamsAreAutoCloseable.java"));
+            PrintWriter outfile = new PrintWriter(
+                    Constants.BASE_PATH + "Results.txt");                         // [1]
     ) {
       in.skip(5)
         .limit(1)
