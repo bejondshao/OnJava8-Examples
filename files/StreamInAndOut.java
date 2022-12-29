@@ -9,9 +9,9 @@ import java.util.stream.*;
 public class StreamInAndOut {
   public static void main(String[] args) {
     try(
-      Stream<String> input =
-        Files.lines(Paths.get("StreamInAndOut.java"));
-      PrintWriter output =
+            Stream<String> input =
+        Files.lines(Paths.get(Constants.BASE_PATH + "StreamInAndOut.java"));
+            PrintWriter output =
         new PrintWriter("StreamInAndOut.txt")
     ) {
       input

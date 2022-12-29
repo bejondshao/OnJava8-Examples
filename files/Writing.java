@@ -19,7 +19,7 @@ public class Writing {
 
     // Write an iterable to a file:
     List<String> lines = Files.readAllLines(
-      Paths.get("../streams/Cheese.dat"));
+      Paths.get(Constants.BASE_PATH + "../streams/Cheese.dat"));
     Files.write(Paths.get("Cheese.txt"), lines);
     System.out.println("Cheese.txt: " +
       Files.size(Paths.get("Cheese.txt")));

@@ -9,7 +9,7 @@ public class ListOfLines {
   public static void
   main(String[] args) throws Exception {
     Files.readAllLines(
-      Paths.get("../streams/Cheese.dat"))
+      Paths.get(Constants.BASE_PATH + "../streams/Cheese.dat"))
       .stream()
       .filter(line -> !line.startsWith("//"))
       .map(line ->
