@@ -4,7 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 // Relying on a common resource
 import java.util.*;
-import onjava.Timer;
 
 public class BadMicroBenchmark2 {
   // SIZE reduced to make it run faster:
@@ -28,8 +27,11 @@ public class BadMicroBenchmark2 {
   }
 }
 /* Output:
-parallelSetAll: 1008
-setAll: 294
-parallelSetAll: 78
-setAll: 88
+parallelSetAll: 620
+setAll: 87
+parallelSetAll: 62
+setAll: 14
 */
+/*
+Because the size is too small, so parallel running is far slower than sequential
+ */

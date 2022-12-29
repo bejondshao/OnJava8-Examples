@@ -23,3 +23,13 @@ public class SimpleDebugging {
     foo1();
   }
 }
+/*
+Exception in thread "main" In foo1
+java.lang.ArithmeticException: / by zero
+	at SimpleDebugging.foo3(SimpleDebugging.java:20)
+	at SimpleDebugging.foo2(SimpleDebugging.java:14)
+In foo2
+	at SimpleDebugging.foo1(SimpleDebugging.java:10)
+In foo3
+	at SimpleDebugging.main(SimpleDebugging.java:23)
+ */

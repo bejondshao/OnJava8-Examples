@@ -2,7 +2,7 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-package validating.jmh;
+package jmh;
 import java.util.*;
 import org.openjdk.jmh.annotations.*;
 import java.util.concurrent.TimeUnit;
@@ -46,3 +46,7 @@ public class JMH3 {
     Arrays.parallelSetAll(la, n -> f(n));
   }
 }
+/*
+After testing by the writer, it shows with complex calculation, parallel setting is much faster than sequential.
+
+ */

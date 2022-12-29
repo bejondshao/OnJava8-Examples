@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Simple use of JUnit to test CountedList.
-package validating;
+
 import java.util.*;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -73,6 +73,14 @@ public class CountedListTest {
     assertEquals(list.size(), 6);
     compare(list, new String[] { "0", "1", "2",
        "An", "African", "Swallow" });
+  }
+
+  @Test
+  public void testClear() {
+    list.add("a");
+    assertEquals(list.size(), 4);
+    list.clear();
+    assertEquals(list.size(), 0);
   }
 }
 /* Output:
