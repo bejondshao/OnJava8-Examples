@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java generics.coffee.CoffeeSupplier}
-package generics.coffee;
+package coffee;
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;

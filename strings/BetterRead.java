@@ -2,11 +2,14 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
+import java.io.BufferedReader;
+import java.io.StringReader;
 import java.util.*;
 
 public class BetterRead {
   public static void main(String[] args) {
-    Scanner stdin = new Scanner(SimpleRead.input);
+    Scanner stdin = new Scanner(new BufferedReader(new StringReader(
+            "Sir Robin of Camelot\n22 1.61803")));
     System.out.println("What is your name?");
     String name = stdin.nextLine();
     System.out.println(name);

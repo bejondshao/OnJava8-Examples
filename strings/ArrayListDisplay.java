@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 import java.util.stream.*;
-import generics.coffee.*;
+import coffee.*;
 
 public class ArrayListDisplay {
   public static void main(String[] args) {

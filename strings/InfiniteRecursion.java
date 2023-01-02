@@ -5,13 +5,13 @@
 // Accidental recursion
 // {ThrowsException}
 // {VisuallyInspectOutput} Throws very long exception
-import java.util.*;
 import java.util.stream.*;
 
 public class InfiniteRecursion {
   @Override public String toString() {
     return
-      " InfiniteRecursion address: " + this + "\n";
+      // " InfiniteRecursion address: " + this + "\n";
+      " InfiniteRecursion address: " + super.toString() + "\n"; // use super.toString() to get address, instead of this.toString()
   }
   public static void main(String[] args) {
     Stream.generate(InfiniteRecursion::new)

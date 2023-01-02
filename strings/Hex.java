@@ -3,8 +3,6 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java onjava.Hex}
-package onjava;
-import java.io.*;
 import java.nio.file.*;
 
 public class Hex {
@@ -27,7 +25,7 @@ public class Hex {
       // Test by displaying this class file:
       System.out.println(format(
         Files.readAllBytes(Paths.get(
-          "build/classes/java/main/onjava/Hex.class"))));
+                Constants.BASE_PATH + "build/classes/java/main/Hex.class"))));
     else
       System.out.println(format(
         Files.readAllBytes(Paths.get(args[0]))));

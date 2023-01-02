@@ -7,7 +7,6 @@
 // WhitherStringBuilder.java "return|for|String"}
 import java.util.regex.*;
 import java.nio.file.*;
-import java.util.stream.*;
 
 public class JGrep {
   public static void
@@ -20,7 +19,7 @@ public class JGrep {
     Pattern p = Pattern.compile(args[1]);
     Matcher m = p.matcher("");
     // Iterate through the lines of the input file:
-    Files.readAllLines(Paths.get(args[0])).forEach(
+    Files.readAllLines(Paths.get(Constants.BASE_PATH + args[0])).forEach(
       line -> {
         m.reset(line);
         while(m.find())
