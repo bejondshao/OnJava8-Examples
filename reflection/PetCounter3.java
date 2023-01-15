@@ -5,8 +5,7 @@
 // Using isInstance()
 import java.util.*;
 import java.util.stream.*;
-import onjava.*;
-import reflection.pets.*;
+import pets.*;
 
 public class PetCounter3 {
   static class Counter extends

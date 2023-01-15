@@ -3,8 +3,8 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Using class literals
-// {java reflection.pets.PetCreator}
-package reflection.pets;
+// {java pets.PetCreator}
+package pets;
 import java.util.*;
 
 public class PetCreator extends Creator {
@@ -33,10 +33,10 @@ public class PetCreator extends Creator {
   }
 }
 /* Output:
-[class reflection.pets.Mutt, class reflection.pets.Pug,
-class reflection.pets.EgyptianMau, class
-reflection.pets.Manx, class reflection.pets.Cymric, class
-reflection.pets.Rat, class reflection.pets.Mouse, class
-reflection.pets.Hamster]
+[class pets.Mutt, class pets.Pug,
+class pets.EgyptianMau, class
+pets.Manx, class pets.Cymric, class
+pets.Rat, class pets.Mouse, class
+pets.Hamster]
 [Rat, Manx, Cymric, Mutt, Pug, Cymric, Pug]
 */

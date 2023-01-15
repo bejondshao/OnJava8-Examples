@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Testing class Class
 // {java reflection.toys.GenericToyTest}
-package reflection.toys;
+package toys;
 
 public class GenericToyTest {
   public static void
@@ -18,5 +18,10 @@ public class GenericToyTest {
     // Class<Toy> up2 = ftc.getSuperclass();
     // Only produces Object:
     Object obj = up.getConstructor().newInstance();
+    // up.newInstance() // warning: [deprecation] newInstance() in Class has been deprecated. It won't pass the compiler
+    System.out.println(obj.getClass());
   }
 }
+/*
+class toys.Toy
+ */

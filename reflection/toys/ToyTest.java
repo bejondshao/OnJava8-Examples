@@ -4,8 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Testing class Class
 // {java reflection.toys.ToyTest}
-package reflection.toys;
-import java.lang.reflect.InvocationTargetException;
+package toys;
 
 interface HasBatteries {}
 interface Waterproof {}
@@ -36,7 +35,7 @@ public class ToyTest {
   public static void main(String[] args) {
     Class c = null;
     try {
-      c = Class.forName("reflection.toys.FancyToy");
+      c = Class.forName("toys.FancyToy");
     } catch(ClassNotFoundException e) {
       System.out.println("Can't find FancyToy");
       System.exit(1);

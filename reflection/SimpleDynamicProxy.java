@@ -30,6 +30,7 @@ class SimpleDynamicProxy {
   public static void main(String[] args) {
     RealObject real = new RealObject();
     consumer(real);
+    System.out.println("---------Call with InvocationHandler----------");
     // Insert a proxy and call again:
     Interface proxy = (Interface)Proxy.newProxyInstance(
       Interface.class.getClassLoader(),

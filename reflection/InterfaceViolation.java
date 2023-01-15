@@ -3,11 +3,15 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Sneaking around an interface
-import reflection.interfacea.*;
+import interfacea.*;
 
 class B implements A {
-  @Override public void f() {}
-  public void g() {}
+  @Override public void f() {
+    System.out.println("calling B.f()");
+  }
+  public void g() {
+    System.out.println("calling B.g()");
+  }
 }
 
 public class InterfaceViolation {

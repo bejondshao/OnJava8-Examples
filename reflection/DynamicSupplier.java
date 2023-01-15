@@ -9,7 +9,7 @@ class ID {
   private static long counter;
   private final long id = counter++;
   @Override public String toString() {
-    return Long.toString(id);
+    return "Its ID: " + id;
   }
   // A public default constructor is required
   // to call getConstructor().newInstance():
@@ -37,9 +37,9 @@ public class DynamicSupplier<T> implements Supplier<T> {
   }
 }
 /* Output:
-10
-11
-12
-13
-14
+Its ID: 10
+Its ID: 11
+Its ID: 12
+Its ID: 13
+Its ID: 14
 */

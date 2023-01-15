@@ -27,6 +27,7 @@ public class ShowMethods {
       Method[] methods = c.getMethods();
       Constructor[] ctors = c.getConstructors();
       if(args.length == 1) {
+        System.out.println("One parameter: " + args[0]);
         for(Method method : methods)
           System.out.println(
             p.matcher(
@@ -36,6 +37,7 @@ public class ShowMethods {
             p.matcher(ctor.toString()).replaceAll(""));
         lines = methods.length + ctors.length;
       } else {
+        System.out.println("More than one parameter");
         for(Method method : methods)
           if(method.toString().contains(args[1])) {
             System.out.println(p.matcher(

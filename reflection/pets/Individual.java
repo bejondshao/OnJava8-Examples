@@ -2,7 +2,7 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-package reflection.pets;
+package pets;
 import java.util.*;
 
 public class
@@ -37,6 +37,6 @@ Individual implements Comparable<Individual> {
       if(secondCompare != 0)
         return secondCompare;
     }
-    return (arg.id < id ? -1 : (arg.id == id ? 0 : 1));
+    return (Long.compare(arg.id, id));
   }
 }

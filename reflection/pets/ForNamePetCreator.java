@@ -2,7 +2,7 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-package reflection.pets;
+package pets;
 import java.util.*;
 
 public class ForNamePetCreator extends Creator {
@@ -10,14 +10,14 @@ public class ForNamePetCreator extends Creator {
     new ArrayList<>();
   // Types you want randomly created:
   private static String[] typeNames = {
-    "reflection.pets.Mutt",
-    "reflection.pets.Pug",
-    "reflection.pets.EgyptianMau",
-    "reflection.pets.Manx",
-    "reflection.pets.Cymric",
-    "reflection.pets.Rat",
-    "reflection.pets.Mouse",
-    "reflection.pets.Hamster"
+    "pets.Mutt",
+    "pets.Pug",
+    "pets.EgyptianMau",
+    "pets.Manx",
+    "pets.Cymric",
+    "pets.Rat",
+    "pets.Mouse",
+    "pets.Hamster"
   };
   @SuppressWarnings("unchecked")
   private static void loader() {

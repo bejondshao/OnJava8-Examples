@@ -21,6 +21,8 @@ public class SweetShop {
     System.out.println("inside main");
     new Candy();
     System.out.println("After creating Candy");
+    // new Gum(); // if uncomment this line, the class loader would load Gum, static block runs, Class.forName("Gum") would do nothing
+    // System.out.println("After creating Gum");
     try {
       Class.forName("Gum");
     } catch(ClassNotFoundException e) {

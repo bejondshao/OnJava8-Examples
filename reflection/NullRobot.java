@@ -6,7 +6,6 @@
 import java.lang.reflect.*;
 import java.util.*;
 import java.util.stream.*;
-import onjava.*;
 
 class NullRobotProxyHandler
 implements InvocationHandler {
