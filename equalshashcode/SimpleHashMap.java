@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // A demonstration hashed Map
 import java.util.*;
-import onjava.*;
+
 
 public
 class SimpleHashMap<K, V> extends AbstractMap<K, V> {

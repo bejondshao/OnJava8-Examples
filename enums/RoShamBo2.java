@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Switching one enum on another
 // {java enums.RoShamBo2}
-package enums;
+
 import static enums.Outcome.*;
 
 public enum RoShamBo2 implements Competitor<RoShamBo2> {

@@ -5,7 +5,7 @@
 // Recover a serialized file
 // {java serialization.xfiles.ThawAlien}
 // {RunFirst: FreezeAlien}
-package serialization.xfiles;
+package xfiles;
 import java.io.*;
 
 public class ThawAlien {

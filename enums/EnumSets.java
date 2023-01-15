@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Operations on EnumSets
 // {java enums.EnumSets}
-package enums;
+
 import java.util.*;
 import static enums.AlarmPoints.*;
 

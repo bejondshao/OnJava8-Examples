@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Multiple dispatching using an EnumMap of EnumMaps
 // {java enums.RoShamBo5}
-package enums;
+
 import java.util.*;
 import static enums.Outcome.*;
 

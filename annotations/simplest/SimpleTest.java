@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Test the "Simple" annotation
 // {java annotations.simplest.SimpleTest}
-package annotations.simplest;
+package simplest;
 
 @Simple
 public class SimpleTest {

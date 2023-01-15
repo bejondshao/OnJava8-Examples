@@ -3,10 +3,10 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Generate random values of different types
-package onjava;
+
 import java.util.*;
 import java.util.function.*;
-import static onjava.ConvertTo.*;
+import static ConvertTo.*;
 
 public interface Rand {
   int MOD = 10_000;

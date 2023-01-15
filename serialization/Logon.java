@@ -6,7 +6,7 @@
 import java.util.concurrent.*;
 import java.io.*;
 import java.util.*;
-import onjava.Nap;
+import Nap;
 
 public class Logon implements Serializable {
   private Date date = new Date();

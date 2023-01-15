@@ -5,7 +5,7 @@
 // NavigableMap produces pieces of a Map
 import java.util.*;
 import java.util.concurrent.*;
-import static onjava.HTMLColors.*;
+import static HTMLColors.*;
 
 public class NavMap {
   public static final

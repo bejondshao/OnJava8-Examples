@@ -4,7 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 // Using inner classes for callbacks
 // {java innerclasses.Callbacks}
-package innerclasses;
 
 interface Incrementable {
   void increment();

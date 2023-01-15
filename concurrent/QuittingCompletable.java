@@ -5,7 +5,7 @@
 import java.util.*;
 import java.util.stream.*;
 import java.util.concurrent.*;
-import onjava.Nap;
+import Nap;
 
 public class QuittingCompletable {
   public static void main(String[] args) {

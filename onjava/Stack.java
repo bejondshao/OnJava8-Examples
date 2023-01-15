@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // A Stack class built with an ArrayDeque
-package onjava;
+
 import java.util.Deque;
 import java.util.ArrayDeque;
 

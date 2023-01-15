@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
-import onjava.Nap;
+import Nap;
 
 class Prioritized implements Comparable<Prioritized>  {
   private static AtomicInteger counter =

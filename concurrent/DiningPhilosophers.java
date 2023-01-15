@@ -6,7 +6,7 @@
 // {ExcludeFromGradle} Gradle has trouble
 import java.util.*;
 import java.util.concurrent.*;
-import onjava.Nap;
+import Nap;
 
 public class DiningPhilosophers {
   private StickHolder[] sticks;

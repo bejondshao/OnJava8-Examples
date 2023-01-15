@@ -4,7 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 // Ensuring proper cleanup
 // {java reuse.CADSystem}
-package reuse;
 
 class Shape {
   Shape(int i) {

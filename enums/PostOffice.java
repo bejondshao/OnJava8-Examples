@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Modeling a post office
 import java.util.*;
-import onjava.*;
+
 
 class Mail {
   // The NO's reduce probability of random selection:

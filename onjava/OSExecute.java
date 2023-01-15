@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Run an operating system command
 // and send the output to the console
-package onjava;
+
 import java.io.*;
 
 public class OSExecute {

@@ -5,7 +5,7 @@
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 import java.util.*;
-import onjava.*;
+
 
 public class AtomicIntegerTest extends IntTestable {
   private AtomicInteger i = new AtomicInteger(0);

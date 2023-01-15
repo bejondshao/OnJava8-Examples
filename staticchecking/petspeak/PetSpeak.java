@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Speaking pets in Java
 // {java staticchecking.petspeak.PetSpeak}
-package staticchecking.petspeak;
+package petspeak;
 
 interface Pet {
   void speak();

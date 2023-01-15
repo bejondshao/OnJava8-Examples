@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Using the Collections.unmodifiable methods
 import java.util.*;
-import onjava.*;
+
 
 public class ReadOnly {
   static Collection<String> data =

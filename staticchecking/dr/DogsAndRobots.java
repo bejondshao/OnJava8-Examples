@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java staticchecking.dr.DogsAndRobots}
-package staticchecking.dr;
+package dr;
 
 interface Speaks { void talk(); }
 

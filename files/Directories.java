@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 import java.nio.file.*;
-import onjava.RmDir;
+import RmDir;
 
 public class Directories {
   static Path test = Paths.get("test");

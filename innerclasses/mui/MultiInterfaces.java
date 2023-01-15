@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Two ways a class can implement multiple interfaces
 // {java innerclasses.mui.MultiInterfaces}
-package innerclasses.mui;
+package mui;
 
 interface A {}
 interface B {}

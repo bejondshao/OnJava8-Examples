@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // A Map implemented with ArrayLists
 import java.util.*;
-import onjava.*;
+
 
 public class SlowMap<K, V> extends AbstractMap<K, V> {
   private List<K> keys = new ArrayList<>();

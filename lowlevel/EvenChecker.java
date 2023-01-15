@@ -5,7 +5,7 @@
 import java.util.*;
 import java.util.stream.*;
 import java.util.concurrent.*;
-import onjava.TimedAbort;
+import TimedAbort;
 
 public class EvenChecker implements Runnable {
   private IntGenerator generator;

@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 import java.util.stream.*;
-import onjava.Timer;
+import Timer;
 
 public class PizzaStreams {
   static final int QUANTITY = 5;

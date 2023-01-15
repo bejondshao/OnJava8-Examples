@@ -3,8 +3,8 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java enums.menu.Meal2}
-package enums.menu;
-import onjava.*;
+package menu;
+
 
 public enum Meal2 {
   APPETIZER(Food.Appetizer.class),

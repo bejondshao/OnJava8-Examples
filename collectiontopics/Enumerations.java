@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Java 1.0/1.1 Vector and Enumeration
 import java.util.*;
-import onjava.*;
+
 
 public class Enumerations {
   public static void main(String[] args) {

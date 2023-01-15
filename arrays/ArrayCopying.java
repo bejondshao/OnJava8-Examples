@@ -4,8 +4,8 @@
 // Visit http://OnJava8.com for more book information.
 // Demonstrate Arrays.copy() and Arrays.copyOf()
 import java.util.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
+
+import static ArrayShow.*;
 
 class Sup { // Superclass
   private int id;

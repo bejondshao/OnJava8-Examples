@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Initialization & re-assignment of arrays
 import java.util.*;
-import static onjava.ArrayShow.*;
+import static ArrayShow.*;
 
 public class ArrayOptions {
   public static void main(String[] args) {

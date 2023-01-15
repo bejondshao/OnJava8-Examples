@@ -6,7 +6,7 @@
 import java.util.*;
 import java.util.stream.*;
 import java.util.concurrent.*;
-import static onjava.HTMLColors.*;
+import static HTMLColors.*;
 
 public class FunctionalMap {
   public static void main(String[] args) {

@@ -5,7 +5,6 @@
 // For concrete or abstract classes, inner classes
 // produce "multiple implementation inheritance"
 // {java innerclasses.MultiImplementation}
-package innerclasses;
 
 class D {}
 abstract class E {}

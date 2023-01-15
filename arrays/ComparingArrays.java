@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Using Arrays.equals()
 import java.util.*;
-import onjava.*;
+
 
 public class ComparingArrays {
   public static final int SZ = 15;

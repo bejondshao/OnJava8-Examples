@@ -15,5 +15,9 @@ public class GenericHolder<T> {
     Automobile a = h3.get(); // No cast needed
     //- h3.set("Not an Automobile"); // Error
     //- h3.set(1); // Error
+    GenericHolder<String> h4 = new GenericHolder<>();
+    h4.set("asdf");
+    String s4 = h4.get();
+    System.out.println("s4: " + s4);
   }
 }

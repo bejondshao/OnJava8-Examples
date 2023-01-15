@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Basics of EnumMaps
 // {java enums.EnumMaps}
-package enums;
+
 import java.util.*;
 import static enums.AlarmPoints.*;
 

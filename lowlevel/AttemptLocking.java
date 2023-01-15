@@ -6,7 +6,7 @@
 // to give up on trying to acquire a lock
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
-import onjava.Nap;
+import Nap;
 
 public class AttemptLocking {
   private ReentrantLock lock = new ReentrantLock();

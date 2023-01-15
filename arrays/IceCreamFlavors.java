@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Returning arrays from methods
 import java.util.*;
-import static onjava.ArrayShow.*;
+import static ArrayShow.*;
 
 public class IceCreamFlavors {
   private static SplittableRandom rand =

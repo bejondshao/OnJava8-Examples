@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // {ExcludeFromGradle} Takes a long time or hangs
 import java.util.concurrent.*;
-import onjava.Nap;
+import Nap;
 
 public class ThreadSize {
   static class Dummy extends Thread {

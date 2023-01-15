@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // What you can do with a LinkedHashMap
 import java.util.*;
-import onjava.*;
+
 
 public class LinkedHashMapDemo {
   public static void main(String[] args) {

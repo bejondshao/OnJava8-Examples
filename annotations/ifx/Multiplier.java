@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // javac-based annotation processing
 // {java annotations.ifx.Multiplier}
-package annotations.ifx;
+package ifx;
 
 @ExtractInterface(interfaceName="IMultiplier")
 public class Multiplier {

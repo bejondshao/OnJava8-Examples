@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // An enum can implement an interface
 // {java enums.cartoons.EnumImplementation}
-package enums.cartoons;
+package cartoons;
 import java.util.*;
 import java.util.function.*;
 

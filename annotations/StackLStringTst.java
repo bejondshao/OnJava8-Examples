@@ -3,11 +3,11 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Applying @Unit to generics
-// {java onjava.atunit.AtUnit
+// {java atunit.AtUnit
 // build/classes/java/main/annotations/StackLStringTst.class}
-package annotations;
-import onjava.atunit.*;
-import onjava.*;
+
+import atunit.*;
+
 
 public class
 StackLStringTst extends StackL<String> {

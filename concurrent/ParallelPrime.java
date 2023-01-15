@@ -7,7 +7,7 @@ import java.util.stream.*;
 import static java.util.stream.LongStream.*;
 import java.io.*;
 import java.nio.file.*;
-import onjava.Timer;
+import Timer;
 
 public class ParallelPrime {
   static final int COUNT = 100_000;

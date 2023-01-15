@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Using constant-specific methods
 // {java enums.RoShamBo3}
-package enums;
+
 import static enums.Outcome.*;
 
 public enum RoShamBo3 implements Competitor<RoShamBo3> {

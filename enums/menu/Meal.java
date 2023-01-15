@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java enums.menu.Meal}
-package enums.menu;
+package menu;
 
 public class Meal {
   public static void main(String[] args) {

@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Enums using "tables" instead of multiple dispatch
 // {java enums.RoShamBo6}
-package enums;
+
 import static enums.Outcome.*;
 
 enum RoShamBo6 implements Competitor<RoShamBo6> {

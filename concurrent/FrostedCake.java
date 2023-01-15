@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.concurrent.*;
 import java.util.stream.*;
-import onjava.Nap;
+import Nap;
 
 final class Frosting {
   private Frosting() {}

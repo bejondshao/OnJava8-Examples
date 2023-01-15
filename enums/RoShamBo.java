@@ -3,8 +3,8 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Common tools for RoShamBo examples
-package enums;
-import onjava.*;
+
+
 
 public class RoShamBo {
   public static <T extends Competitor<T>>

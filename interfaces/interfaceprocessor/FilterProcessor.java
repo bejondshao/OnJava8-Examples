@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java interfaces.interfaceprocessor.FilterProcessor}
-package interfaces.interfaceprocessor;
+package interfaceprocessor;
 import interfaces.filters.*;
 
 class FilterAdapter implements Processor {

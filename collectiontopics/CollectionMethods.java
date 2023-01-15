@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Things you can do with all Collections
 import java.util.*;
-import static onjava.HTMLColors.*;
+import static HTMLColors.*;
 
 public class CollectionMethods {
   public static void main(String[] args) {

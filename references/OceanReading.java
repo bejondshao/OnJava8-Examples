@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Cloning a composed object
-package references;
+
 
 public class OceanReading implements Cloneable {
   private DepthReading depth;

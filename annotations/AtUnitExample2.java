@@ -3,12 +3,12 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Assertions and exceptions can be used in @Tests
-// {java onjava.atunit.AtUnit
+// {java atunit.AtUnit
 // build/classes/java/main/annotations/AtUnitExample2.class}
-package annotations;
+
 import java.io.*;
-import onjava.atunit.*;
-import onjava.*;
+import atunit.*;
+
 
 public class AtUnitExample2 {
   public String methodOne() {

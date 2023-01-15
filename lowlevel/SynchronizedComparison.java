@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
-import onjava.Nap;
+import Nap;
 
 abstract class Guarded {
   AtomicLong callCount = new AtomicLong();

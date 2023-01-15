@@ -2,12 +2,12 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-// {java onjava.atunit.ClassNameFinder}
-package onjava.atunit;
+// {java atunit.ClassNameFinder}
+package atunit;
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
-import onjava.*;
+
 
 public class ClassNameFinder {
   public static String thisClass(byte[] classBytes) {
@@ -102,79 +102,79 @@ public class ClassNameFinder {
   }
 }
 /* Output:
-onjava.ArrayShow
-onjava.atunit.AtUnit$TestMethods
-onjava.atunit.AtUnit
-onjava.atunit.ClassNameFinder
-onjava.atunit.Test
-onjava.atunit.TestObjectCleanup
-onjava.atunit.TestObjectCreate
-onjava.atunit.TestProperty
-onjava.BasicSupplier
-onjava.CollectionMethodDifferences
-onjava.ConvertTo
-onjava.Count$Boolean
-onjava.Count$Byte
-onjava.Count$Character
-onjava.Count$Double
-onjava.Count$Float
-onjava.Count$Integer
-onjava.Count$Long
-onjava.Count$Pboolean
-onjava.Count$Pbyte
-onjava.Count$Pchar
-onjava.Count$Pdouble
-onjava.Count$Pfloat
-onjava.Count$Pint
-onjava.Count$Plong
-onjava.Count$Pshort
-onjava.Count$Short
-onjava.Count
-onjava.CountingIntegerList
-onjava.CountMap
-onjava.Countries
-onjava.Enums
-onjava.FillMap
-onjava.HTMLColors
-onjava.MouseClick
-onjava.Nap
-onjava.Null
-onjava.Operations
-onjava.OSExecute
-onjava.OSExecuteException
-onjava.Pair
-onjava.ProcessFiles$Strategy
-onjava.ProcessFiles
-onjava.Rand$Boolean
-onjava.Rand$Byte
-onjava.Rand$Character
-onjava.Rand$Double
-onjava.Rand$Float
-onjava.Rand$Integer
-onjava.Rand$Long
-onjava.Rand$Pboolean
-onjava.Rand$Pbyte
-onjava.Rand$Pchar
-onjava.Rand$Pdouble
-onjava.Rand$Pfloat
-onjava.Rand$Pint
-onjava.Rand$Plong
-onjava.Rand$Pshort
-onjava.Rand$Short
-onjava.Rand$String
-onjava.Rand
-onjava.Range
-onjava.Repeat
-onjava.RmDir
-onjava.Sets
-onjava.Stack
-onjava.Suppliers
-onjava.TimedAbort
-onjava.Timer
-onjava.Tuple
-onjava.Tuple2
-onjava.Tuple3
-onjava.Tuple4
-onjava.Tuple5
-onjava.TypeCounter
+ArrayShow
+atunit.AtUnit$TestMethods
+atunit.AtUnit
+atunit.ClassNameFinder
+atunit.Test
+atunit.TestObjectCleanup
+atunit.TestObjectCreate
+atunit.TestProperty
+BasicSupplier
+CollectionMethodDifferences
+ConvertTo
+Count$Boolean
+Count$Byte
+Count$Character
+Count$Double
+Count$Float
+Count$Integer
+Count$Long
+Count$Pboolean
+Count$Pbyte
+Count$Pchar
+Count$Pdouble
+Count$Pfloat
+Count$Pint
+Count$Plong
+Count$Pshort
+Count$Short
+Count
+CountingIntegerList
+CountMap
+Countries
+Enums
+FillMap
+HTMLColors
+MouseClick
+Nap
+Null
+Operations
+OSExecute
+OSExecuteException
+Pair
+ProcessFiles$Strategy
+ProcessFiles
+Rand$Boolean
+Rand$Byte
+Rand$Character
+Rand$Double
+Rand$Float
+Rand$Integer
+Rand$Long
+Rand$Pboolean
+Rand$Pbyte
+Rand$Pchar
+Rand$Pdouble
+Rand$Pfloat
+Rand$Pint
+Rand$Plong
+Rand$Pshort
+Rand$Short
+Rand$String
+Rand
+Range
+Repeat
+RmDir
+Sets
+Stack
+Suppliers
+TimedAbort
+Timer
+Tuple
+Tuple2
+Tuple3
+Tuple4
+Tuple5
+TypeCounter
 */

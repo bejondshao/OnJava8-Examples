@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Demonstration of multiple dispatching
 // {java enums.RoShamBo1}
-package enums;
+
 import java.util.*;
 
 public class RoShamBo1 {

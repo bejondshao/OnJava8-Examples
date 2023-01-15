@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java enums.menu.TypeOfFood}
-package enums.menu;
+package menu;
 import static enums.menu.Food.*;
 
 public class TypeOfFood {

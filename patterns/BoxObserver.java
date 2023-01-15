@@ -9,8 +9,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
-import onjava.*;
-import onjava.MouseClick;
+
+import MouseClick;
 
 @SuppressWarnings("deprecation")
 class Boxes extends JFrame {

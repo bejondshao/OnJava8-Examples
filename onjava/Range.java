@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Create arrays initialized with integer values.
-package onjava;
+
 
 public class Range {
   // Produce sequence [start..end) incrementing by step

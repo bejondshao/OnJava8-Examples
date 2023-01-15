@@ -5,8 +5,8 @@
 // Test random generators
 import java.util.*;
 import java.util.stream.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
+
+import static ArrayShow.*;
 
 public class TestRand {
   static final int SZ = 5;

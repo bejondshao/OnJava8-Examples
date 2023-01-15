@@ -5,7 +5,7 @@
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.*;
-import onjava.Timer;
+import Timer;
 
 public class CompletablePizza {
   static final int QUANTITY = 5;

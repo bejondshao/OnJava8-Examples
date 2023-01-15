@@ -4,8 +4,8 @@
 // Visit http://OnJava8.com for more book information.
 // Implementing a Comparator for a class
 import java.util.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
+
+import static ArrayShow.*;
 
 class CompTypeComparator
 implements Comparator<CompType> {

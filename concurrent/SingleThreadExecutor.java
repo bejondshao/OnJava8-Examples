@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.concurrent.*;
 import java.util.stream.*;
-import onjava.*;
+
 
 public class SingleThreadExecutor {
   public static void main(String[] args) {

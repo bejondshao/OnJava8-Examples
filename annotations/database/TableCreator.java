@@ -5,7 +5,7 @@
 // Reflection-based annotation processor
 // {java annotations.database.TableCreator
 // annotations.database.Member}
-package annotations.database;
+package database;
 import java.lang.annotation.*;
 import java.lang.reflect.*;
 import java.util.*;

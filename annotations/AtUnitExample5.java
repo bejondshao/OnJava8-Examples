@@ -2,12 +2,12 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-// {java onjava.atunit.AtUnit
+// {java atunit.AtUnit
 // build/classes/java/main/annotations/AtUnitExample5.class}
-package annotations;
+
 import java.io.*;
-import onjava.atunit.*;
-import onjava.*;
+import atunit.*;
+
 
 public class AtUnitExample5 {
   private String text;

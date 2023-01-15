@@ -3,9 +3,9 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
-import static onjava.ConvertTo.*;
+
+import static ArrayShow.*;
+import static ConvertTo.*;
 
 public class TestConvertTo {
   static final int SIZE = 6;

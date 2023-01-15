@@ -33,8 +33,8 @@ public class Stacks {
 
     // Using the Stack class from
     // the Collections Chapter:
-    onjava.Stack<String> stack2 =
-      new onjava.Stack<>();
+    Stack<String> stack2 =
+      new Stack<>();
     for(Month m : Month.values())
       stack2.push(m.toString());
     System.out.println("stack2 = " + stack2);

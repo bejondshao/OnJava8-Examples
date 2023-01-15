@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Helper interface to allow lambda expressions.
-package onjava;
+
 import java.awt.event.*;
 
 // Default everything except mouseClicked():

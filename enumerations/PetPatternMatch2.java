@@ -5,7 +5,7 @@
 // {NewFeature} Preview in JDK 17
 // Compile with javac flags:
 //   --enable-preview --source 17
-package sealedpet;
+
 import java.util.*;
 
 sealed interface Pet {

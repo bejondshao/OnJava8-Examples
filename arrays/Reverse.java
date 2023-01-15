@@ -4,8 +4,8 @@
 // Visit http://OnJava8.com for more book information.
 // The Collections.reverseOrder() Comparator
 import java.util.*;
-import onjava.*;
-import static onjava.ArrayShow.*;
+
+import static ArrayShow.*;
 
 public class Reverse {
   public static void main(String[] args) {

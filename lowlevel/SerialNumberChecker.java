@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Test SerialNumbers implementations for thread-safety
 import java.util.concurrent.*;
-import onjava.Nap;
+import Nap;
 
 public class SerialNumberChecker implements Runnable {
   private CircularSet serials = new CircularSet(1000);

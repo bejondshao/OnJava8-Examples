@@ -2,13 +2,13 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-// {java onjava.atunit.AtUnit
+// {java atunit.AtUnit
 // build/classes/java/main/annotations/AtUnitExample4.class}
 // {VisuallyInspectOutput}
-package annotations;
+
 import java.util.*;
-import onjava.atunit.*;
-import onjava.*;
+import atunit.*;
+
 
 public class AtUnitExample4 {
   static String theory = "All brontosauruses " +

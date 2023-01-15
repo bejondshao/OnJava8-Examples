@@ -12,8 +12,8 @@ import enums.Item;
 import enums.Paper;
 import enums.Scissors;
 import enums.Rock;
-import onjava.*;
-import static onjava.Tuple.*;
+
+import static Tuple.*;
 
 class ItemFactory {
   static List<Supplier<Item>> items =
