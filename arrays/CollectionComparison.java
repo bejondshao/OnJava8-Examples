@@ -4,8 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 
-import static ArrayShow.*;
-
 class BerylliumSphere {
   private static long counter;
   private final long id = counter++;
@@ -20,7 +18,7 @@ public class CollectionComparison {
       new BerylliumSphere[10];
     for(int i = 0; i < 5; i++)
       spheres[i] = new BerylliumSphere();
-    show(spheres);
+    ArrayShow.show(spheres);
     System.out.println(spheres[4]);
 
     List<BerylliumSphere> sphereList = Suppliers.create(
@@ -29,7 +27,7 @@ public class CollectionComparison {
     System.out.println(sphereList.get(4));
 
     int[] integers = { 0, 1, 2, 3, 4, 5 };
-    show(integers);
+    ArrayShow.show(integers);
     System.out.println(integers[4]);
 
     List<Integer> intList = new ArrayList<>(

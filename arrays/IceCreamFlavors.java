@@ -4,7 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 // Returning arrays from methods
 import java.util.*;
-import static ArrayShow.*;
 
 public class IceCreamFlavors {
   private static SplittableRandom rand =
@@ -31,7 +30,7 @@ public class IceCreamFlavors {
   }
   public static void main(String[] args) {
     for(int i = 0; i < 7; i++)
-      show(flavorSet(3));
+      ArrayShow.show(flavorSet(3));
   }
 }
 /* Output:

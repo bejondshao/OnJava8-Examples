@@ -11,8 +11,13 @@ public class MultidimensionalPrimitiveArray {
       { 4, 5, 6, },
     };
     System.out.println(Arrays.deepToString(a));
+    System.out.println(a[1][2]); // row 1 + 1, column 2 + 1, which is 6
   }
 }
 /* Output:
-[[1, 2, 3], [4, 5, 6]]
+[
+[1, 2, 3],
+ [4, 5, 6]
+ ]
+ 6
 */

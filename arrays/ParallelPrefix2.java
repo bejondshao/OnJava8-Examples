@@ -4,14 +4,13 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 
-import static ArrayShow.*;
 
 public class ParallelPrefix2 {
   public static void main(String[] args) {
     String[] strings = new Rand.String(1).array(8);
-    show(strings);
+    ArrayShow.show(strings);
     Arrays.parallelPrefix(strings, (a, b) -> a + b);
-    show(strings);
+    ArrayShow.show(strings);
   }
 }
 /* Output:

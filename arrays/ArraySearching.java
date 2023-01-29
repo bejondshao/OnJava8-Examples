@@ -5,14 +5,12 @@
 // Using Arrays.binarySearch()
 import java.util.*;
 
-import static ArrayShow.*;
-
 public class ArraySearching {
   public static void main(String[] args) {
     Rand.Pint rand = new Rand.Pint();
     int[] a = new Rand.Pint().array(25);
     Arrays.sort(a);
-    show("Sorted array", a);
+    ArrayShow.show("Sorted array", a);
     while(true) {
       int r = rand.getAsInt();
       int location = Arrays.binarySearch(a, r);

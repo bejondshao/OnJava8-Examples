@@ -4,15 +4,14 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 
-import static ArrayShow.*;
 
 public class ModifyExisting {
   public static void main(String[] args) {
     double[] da = new double[7];
     Arrays.setAll(da, new Rand.Double()::get);
-    show(da);
+    ArrayShow.show(da);
     Arrays.setAll(da, n -> da[n] / 100);       // [1]
-    show(da);
+    ArrayShow.show(da);
   }
 }
 /* Output:

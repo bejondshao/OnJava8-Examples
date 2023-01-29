@@ -4,7 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 // Using Arrays.fill()
 import java.util.*;
-import static ArrayShow.*;
 
 public class FillingArrays {
   public static void main(String[] args) {
@@ -19,26 +18,26 @@ public class FillingArrays {
     double[] a8 = new double[size];
     String[] a9 = new String[size];
     Arrays.fill(a1, true);
-    show("a1", a1);
+    ArrayShow.show("a1", a1);
     Arrays.fill(a2, (byte)11);
-    show("a2", a2);
+    ArrayShow.show("a2", a2);
     Arrays.fill(a3, 'x');
-    show("a3", a3);
+    ArrayShow.show("a3", a3);
     Arrays.fill(a4, (short)17);
-    show("a4", a4);
+    ArrayShow.show("a4", a4);
     Arrays.fill(a5, 19);
-    show("a5", a5);
+    ArrayShow.show("a5", a5);
     Arrays.fill(a6, 23);
-    show("a6", a6);
+    ArrayShow.show("a6", a6);
     Arrays.fill(a7, 29);
-    show("a7", a7);
+    ArrayShow.show("a7", a7);
     Arrays.fill(a8, 47);
-    show("a8", a8);
+    ArrayShow.show("a8", a8);
     Arrays.fill(a9, "Hello");
-    show("a9", a9);
+    ArrayShow.show("a9", a9);
     // Manipulating ranges:
     Arrays.fill(a9, 3, 5, "World");
-    show("a9", a9);
+    ArrayShow.show("a9", a9);
   }
 }
 /* Output:

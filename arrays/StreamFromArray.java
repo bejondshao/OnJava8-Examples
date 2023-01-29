@@ -4,7 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 
-
 public class StreamFromArray {
   public static void main(String[] args) {
     String[] s = new Rand.String().array(10);

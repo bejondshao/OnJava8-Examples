@@ -5,7 +5,6 @@
 // Implementing Comparable in a class
 import java.util.*;
 
-
 public class CompType implements Comparable<CompType> {
   int i;
   int j;
@@ -21,9 +20,9 @@ public class CompType implements Comparable<CompType> {
     return result;
   }
   @Override public int compareTo(CompType rv) {
-    return (i < rv.i ? -1 : (i == rv.i ? 0 : 1));
+    return Integer.compare(i, rv.i);
   }
-  private static SplittableRandom r =
+  private static final SplittableRandom r =
     new SplittableRandom(47);
   public static CompType get() {
     return new CompType(r.nextInt(100), r.nextInt(100));
