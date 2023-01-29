@@ -4,7 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 // Initialization & re-assignment of arrays
 import java.util.*;
-import static ArrayShow.*;
 
 public class ArrayOptions {
   public static void main(String[] args) {
@@ -14,7 +13,7 @@ public class ArrayOptions {
 
     // The references inside the array are
     // automatically initialized to null:
-    show("b", b);
+    ArrayShow.show("b", b);
     BerylliumSphere[] c = new BerylliumSphere[4];
     for(int i = 0; i < c.length; i++)
       if(c[i] == null) // Can test for null reference
@@ -46,7 +45,7 @@ public class ArrayOptions {
 
     // The primitives inside the array are
     // automatically initialized to zero:
-    show("f", f);
+    ArrayShow.show("f", f);
     int[] g = new int[4];
     for(int i = 0; i < g.length; i++)
       g[i] = i*i;

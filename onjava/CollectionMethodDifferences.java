@@ -3,7 +3,11 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java CollectionMethodDifferences}
-
+/**
+ * This example is not useful. It's not good for new learners. Since we have
+ * tested methods related to Sets. We also use generic methods. So this
+ * example is duplicated and complex.
+ */
 import java.lang.reflect.*;
 import java.util.*;
 import java.util.stream.*;

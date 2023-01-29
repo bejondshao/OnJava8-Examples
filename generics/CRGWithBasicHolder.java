@@ -12,9 +12,12 @@ public class CRGWithBasicHolder {
       st2 = new Subtype();
     st1.set(st2);
     Subtype st3 = st1.get();
-    st1.f();
+    st1.print();
+    System.out.println(st2 == st3);
   }
 }
 /* Output:
 Subtype
+Subtype@28a418fc
+true
 */

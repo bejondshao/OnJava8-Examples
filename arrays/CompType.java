@@ -4,9 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Implementing Comparable in a class
 import java.util.*;
-import java.util.function.*;
 
-import static ArrayShow.*;
 
 public class CompType implements Comparable<CompType> {
   int i;
@@ -33,9 +31,9 @@ public class CompType implements Comparable<CompType> {
   public static void main(String[] args) {
     CompType[] a = new CompType[12];
     Arrays.setAll(a, n -> get());
-    show("Before sorting", a);
+    ArrayShow.show("Before sorting", a);
     Arrays.sort(a);
-    show("After sorting", a);
+    ArrayShow.show("After sorting", a);
   }
 }
 /* Output:

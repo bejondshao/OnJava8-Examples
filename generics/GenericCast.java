@@ -19,7 +19,9 @@ class FixedSizeStack<T> {
   }
   @SuppressWarnings("unchecked")
   public T pop() {
-    return index == 0 ? null : (T)storage[--index];
+    T t = index == 0 ? null : (T)storage[--index];
+    storage[index] = null;
+    return t;
   }
   @SuppressWarnings("unchecked")
   Stream<T> stream() {
@@ -33,15 +35,19 @@ public class GenericCast {
   public static void main(String[] args) {
     FixedSizeStack<String> strings =
       new FixedSizeStack<>(letters.length);
-    Arrays.stream("ABCDEFGHIJKLMNOPQRS".split(""))
+    Arrays.stream(letters)
       .forEach(strings::push);
     System.out.println(strings.pop());
-    strings.stream()
+    System.out.println(strings.pop());
+    System.out.println(strings.pop());
+    strings.stream().filter(Objects::nonNull).sorted(Comparator.reverseOrder())
       .map(s -> s + " ")
       .forEach(System.out::print);
   }
 }
 /* Output:
 S
-A B C D E F G H I J K L M N O P Q R S
+R
+Q
+P O N M L K J I H G F E D C B A
 */

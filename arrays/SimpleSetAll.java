@@ -3,7 +3,6 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
-import static ArrayShow.*;
 
 class Bob {
   final int id;
@@ -26,23 +25,23 @@ public class SimpleSetAll {
     Arrays.setAll(ia, n -> n);                 // [1]
     Arrays.setAll(la, n -> n);
     Arrays.setAll(da, n -> n);
-    show(ia);
-    show(la);
-    show(da);
+    ArrayShow.show(ia);
+    ArrayShow.show(la);
+    ArrayShow.show(da);
     Arrays.setAll(ia, n -> val++);             // [2]
     Arrays.setAll(la, n -> val++);
     Arrays.setAll(da, n -> val++);
-    show(ia);
-    show(la);
-    show(da);
+    ArrayShow.show(ia);
+    ArrayShow.show(la);
+    ArrayShow.show(da);
 
     Bob[] ba = new Bob[SZ];
     Arrays.setAll(ba, Bob::new);               // [3]
-    show(ba);
+    ArrayShow.show(ba);
 
     Character[] ca = new Character[SZ];
     Arrays.setAll(ca, SimpleSetAll::getChar);  // [4]
-    show(ca);
+    ArrayShow.show(ca);
   }
 }
 /* Output:

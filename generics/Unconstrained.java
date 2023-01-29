@@ -4,17 +4,18 @@
 // Visit http://OnJava8.com for more book information.
 
 class Other {}
-class BasicOther extends BasicHolder<Other> {}
+class SubOther extends BasicHolder<Other> {}
 
 public class Unconstrained {
   public static void main(String[] args) {
-    BasicOther b = new BasicOther();
-    BasicOther b2 = new BasicOther();
+    SubOther b = new SubOther();
+    SubOther b2 = new SubOther();
     b.set(new Other());
     Other other = b.get();
-    b.f();
+    b.print();
   }
 }
 /* Output:
 Other
+Other@5305068a
 */

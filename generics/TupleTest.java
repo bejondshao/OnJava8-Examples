@@ -28,14 +28,19 @@ public class TupleTest {
     Tuple2<String, Integer> ttsi = f();
     System.out.println(ttsi);
     // ttsi.a1 = "there"; // Compile error: final
-    System.out.println(g());
+    Tuple3<Amphibian, String, Integer> tuple3 = g();
+    System.out.println(tuple3.a1);
+    System.out.println(tuple3.a2);
+    System.out.println(tuple3.a3);
     System.out.println(h());
     System.out.println(k());
   }
 }
 /* Output:
 (hi, 47)
-(Amphibian@1c7c054, hi, 47)
-(Vehicle@14991ad, Amphibian@d93b30, hi, 47)
-(Vehicle@a14482, Amphibian@140e19d, hi, 47, 11.1)
+Amphibian@3a71f4dd
+hi
+47
+(Vehicle@65b54208, Amphibian@1be6f5c3, hi, 47)
+(Vehicle@5b2133b1, Amphibian@72ea2f77, hi, 47, 11.1)
 */

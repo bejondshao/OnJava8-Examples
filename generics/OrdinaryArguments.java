@@ -22,7 +22,7 @@ public class OrdinaryArguments {
     DerivedSetter ds = new DerivedSetter();
     ds.set(derived);
     // Compiles--overloaded, not overridden!:
-    ds.set(base);
+    ds.set(base); // the parameter is not the same, base can't be downcast to Derived, so it calls the Base class method
   }
 }
 /* Output:

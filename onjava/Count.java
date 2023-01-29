@@ -6,7 +6,6 @@
 
 import java.util.*;
 import java.util.function.*;
-import static ConvertTo.*;
 
 public interface Count {
   class Boolean
@@ -34,7 +33,7 @@ public interface Count {
     }
     public boolean get(int n) { return get(); }
     public boolean[] array(int sz) {
-      return primitive(new Boolean().array(sz));
+      return ConvertTo.primitive(new Boolean().array(sz));
     }
   }
   class Byte
@@ -57,7 +56,7 @@ public interface Count {
     public byte get() { return b++; }
     public byte get(int n) { return get(); }
     public byte[] array(int sz) {
-      return primitive(new Byte().array(sz));
+      return ConvertTo.primitive(new Byte().array(sz));
     }
   }
   char[] CHARS =
@@ -87,7 +86,7 @@ public interface Count {
     }
     public char get(int n) { return get(); }
     public char[] array(int sz) {
-      return primitive(new Character().array(sz));
+      return ConvertTo.primitive(new Character().array(sz));
     }
   }
   class Short
@@ -110,7 +109,7 @@ public interface Count {
     public short get() { return s++; }
     public short get(int n) { return get(); }
     public short[] array(int sz) {
-      return primitive(new Short().array(sz));
+      return ConvertTo.primitive(new Short().array(sz));
     }
   }
   class Integer
@@ -135,7 +134,7 @@ public interface Count {
     @Override
     public int getAsInt() { return get(); }
     public int[] array(int sz) {
-      return primitive(new Integer().array(sz));
+      return ConvertTo.primitive(new Integer().array(sz));
     }
   }
   class Long
@@ -160,7 +159,7 @@ public interface Count {
     @Override
     public long getAsLong() { return get(); }
     public long[] array(int sz) {
-      return primitive(new Long().array(sz));
+      return ConvertTo.primitive(new Long().array(sz));
     }
   }
   class Float
@@ -184,7 +183,7 @@ public interface Count {
     public float get() { return i++; }
     public float get(int n) { return get(); }
     public float[] array(int sz) {
-      return primitive(new Float().array(sz));
+      return ConvertTo.primitive(new Float().array(sz));
     }
   }
   class Double
@@ -210,7 +209,7 @@ public interface Count {
     @Override
     public double getAsDouble() { return get(0); }
     public double[] array(int sz) {
-      return primitive(new Double().array(sz));
+      return ConvertTo.primitive(new Double().array(sz));
     }
   }
 }

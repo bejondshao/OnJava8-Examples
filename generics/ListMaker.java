@@ -9,5 +9,7 @@ public class ListMaker<T> {
   public static void main(String[] args) {
     ListMaker<String> stringMaker = new ListMaker<>();
     List<String> stringList = stringMaker.create();
+    stringList.add(String.valueOf(1));
+    stringList.forEach(System.out::println);
   }
 }

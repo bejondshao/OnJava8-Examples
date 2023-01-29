@@ -5,12 +5,11 @@
 // An annotation-based unit-test framework
 // {java atunit.AtUnit}
 package atunit;
+
 import java.lang.reflect.*;
 import java.io.*;
 import java.util.*;
 import java.nio.file.*;
-import java.util.stream.*;
-
 
 public class AtUnit implements ProcessFiles.Strategy {
   static Class<?> testClass;

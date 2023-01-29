@@ -10,3 +10,5 @@ class Employee implements Payable<Employee> {}
 
 class Hourly extends Employee
 implements Payable<Hourly> {}
+
+class Daily implements Payable<Daily> {}

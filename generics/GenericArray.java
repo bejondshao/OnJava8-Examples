@@ -24,9 +24,10 @@ public class GenericArray<T> {
     }
     // This is OK:
     Object[] oa = gai.rep();
+    System.out.println(oa.getClass());
   }
 }
 /* Output:
-[Ljava.lang.Object; cannot be cast to
-[Ljava.lang.Integer;
+class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.Integer; ([Ljava.lang.Object; and [Ljava.lang.Integer; are in module java.base of loader 'bootstrap')
+class [Ljava.lang.Object;
 */

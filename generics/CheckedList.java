@@ -3,7 +3,9 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Using Collection.checkedList()
-import pets.*;
+import pets.Cat;
+import pets.Dog;
+import pets.Pet;
 import java.util.*;
 
 public class CheckedList {

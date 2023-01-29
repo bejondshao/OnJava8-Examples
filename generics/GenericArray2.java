@@ -30,6 +30,9 @@ public class GenericArray2<T> {
     } catch(Exception e) {
       System.out.println(e);
     }
+    Object[] ia2 = gai.rep();
+    Integer integer =  (Integer) ia2[2];
+    System.out.println(integer);
   }
 }
 /* Output:

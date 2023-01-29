@@ -10,6 +10,7 @@ SelfBoundSetter<T extends SelfBoundSetter<T>> {
 
 interface Setter extends SelfBoundSetter<Setter> {}
 
+@SuppressWarnings("unchecked")
 public class SelfBoundingAndCovariantArguments {
   void
   testA(Setter s1, Setter s2, SelfBoundSetter sbs) {
@@ -27,5 +28,6 @@ public class SelfBoundingAndCovariantArguments {
     //     T extends SelfBoundSetter<T> declared in
     //     interface SelfBoundSetter
     // 1 error
+    sbs.set(s2); // this is ok, upcast
   }
 }

@@ -3,7 +3,6 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Basic test of Range.java
-import static Range.*;
 import java.util.Arrays;
 
 public class TestRange {
@@ -11,12 +10,12 @@ public class TestRange {
     System.out.println(Arrays.toString(rng));
   }
   public static void main(String[] args) {
-    show(range(10, 21, 3));
-    show(range(21, 10, -3));
-    show(range(-5, 5, -3));
-    show(range(-5, 5, 3));
-    show(range(10, 21));
-    show(range(10));
+    show(Range.range(10, 21, 3));
+    show(Range.range(21, 10, -3));
+    show(Range.range(-5, 5, -3));
+    show(Range.range(-5, 5, 3));
+    show(Range.range(10, 21));
+    show(Range.range(10));
   }
 }
 /* Output:

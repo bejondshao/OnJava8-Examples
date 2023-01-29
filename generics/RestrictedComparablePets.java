@@ -14,6 +14,7 @@ implements Comparable<ComparablePet> {
 // Or just:
 
 class Gecko extends ComparablePet {
+  @Override
   public int compareTo(ComparablePet arg) {
     return 0;
   }

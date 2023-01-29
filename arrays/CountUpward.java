@@ -2,9 +2,7 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-import java.util.*;
 import java.util.stream.*;
-import static ArrayShow.*;
 
 public class CountUpward {
   static long[] fillCounted(int size) {
@@ -13,7 +11,7 @@ public class CountUpward {
   }
   public static void main(String[] args) {
     long[] l1 = fillCounted(20); // No problem
-    show(l1);
+    ArrayShow.show(l1);
     // On my machine, this runs out of heap space:
     //- long[] l2 = fillCounted(10_000_000);
   }

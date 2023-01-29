@@ -24,5 +24,8 @@ public class ErasureAndInheritance {
     Derived2 d2 = new Derived2();
     Object obj = d2.get();
     d2.set(obj); // Warning here!
+    Derived1<HasF> d1 = new Derived1<>();
+    HasF obj1 = d1.get();
+    d1.set(obj1); // This works
   }
 }

@@ -4,8 +4,9 @@
 // Visit http://OnJava8.com for more book information.
 
 public class GenericMethods {
-  public <T> void f(T x) {
+  public <T> T f(T x) {
     System.out.println(x.getClass().getName());
+    return x;
   }
   public static void main(String[] args) {
     GenericMethods gm = new GenericMethods();

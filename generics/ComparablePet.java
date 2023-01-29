@@ -5,8 +5,9 @@
 
 public class ComparablePet
 implements Comparable<ComparablePet> {
+  private double weight;
   @Override
   public int compareTo(ComparablePet arg) {
-    return 0;
+    return Double.compare(weight, arg.weight);
   }
 }

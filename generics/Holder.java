@@ -18,11 +18,11 @@ public class Holder<T> {
     return Objects.hashCode(value);
   }
   public static void main(String[] args) {
-    Holder<Apple> apple = new Holder<>(new Apple());
-    Apple d = apple.get();
-    apple.set(d);
-    // Holder<Fruit> Fruit = apple; // Cannot upcast
-    Holder<? extends Fruit> fruit = apple; // OK
+    Holder<Apple> appleHolder = new Holder<>(new Apple());
+    Apple d = appleHolder.get();
+    appleHolder.set(d);
+    // Holder<Fruit> Fruit = appleHolder; // Cannot upcast, Holder<Apple> is not subclass of Holer<Fruit>
+    Holder<? extends Fruit> fruit = appleHolder; // OK
     Fruit p = fruit.get();
     d = (Apple)fruit.get(); // Returns 'Object'
     try {
@@ -34,7 +34,6 @@ public class Holder<T> {
   }
 }
 /* Output:
-java.lang.ClassCastException: Apple cannot be cast to
-Orange
+java.lang.ClassCastException: Apple cannot be cast to Orange
 false
 */

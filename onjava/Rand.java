@@ -6,7 +6,6 @@
 
 import java.util.*;
 import java.util.function.*;
-import static ConvertTo.*;
 
 public interface Rand {
   int MOD = 10_000;
@@ -28,7 +27,7 @@ public interface Rand {
   }
   class Pboolean {
     public boolean[] array(int sz) {
-      return primitive(new Boolean().array(sz));
+      return ConvertTo.primitive(new Boolean().array(sz));
     }
   }
   class Byte
@@ -49,7 +48,7 @@ public interface Rand {
   }
   class Pbyte {
     public byte[] array(int sz) {
-      return primitive(new Byte().array(sz));
+      return ConvertTo.primitive(new Byte().array(sz));
     }
   }
   class Character
@@ -70,7 +69,7 @@ public interface Rand {
   }
   class Pchar {
     public char[] array(int sz) {
-      return primitive(new Character().array(sz));
+      return ConvertTo.primitive(new Character().array(sz));
     }
   }
   class Short
@@ -91,7 +90,7 @@ public interface Rand {
   }
   class Pshort {
     public short[] array(int sz) {
-      return primitive(new Short().array(sz));
+      return ConvertTo.primitive(new Short().array(sz));
     }
   }
   class Integer
@@ -168,7 +167,7 @@ public interface Rand {
   }
   class Pfloat {
     public float[] array(int sz) {
-      return primitive(new Float().array(sz));
+      return ConvertTo.primitive(new Float().array(sz));
     }
   }
   static double trim(double d) {

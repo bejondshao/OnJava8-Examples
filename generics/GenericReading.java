@@ -28,6 +28,8 @@ public class GenericReading {
     //- Fruit a = fruitReader.readExact(apples);
     // error: incompatible types: List<Apple>
     // cannot be converted to List<Fruit>
+    Reader<Apple> appleReader = new Reader<>();
+    Apple apple = appleReader.readExact(apples);
   }
   static class CovariantReader<T> {
     T readCovariant(List<? extends T> list) {

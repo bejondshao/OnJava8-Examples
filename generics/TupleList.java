@@ -5,8 +5,6 @@
 // Combining generic types to make complex generic types
 import java.util.*;
 
-import java.util.stream.*;
-
 public class TupleList<A, B, C, D>
 extends ArrayList<Tuple4<A, B, C, D>> {
   public static void main(String[] args) {

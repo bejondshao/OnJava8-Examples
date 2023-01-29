@@ -3,21 +3,27 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Building a complex model using generic collections
+/**
+ * Bad example, we usually use composition, even though this example aims to
+ * demonstrate Complex Model, but one type of complex model is enough. It's
+ * too complex for new learners.
+ */
+
 import java.util.*;
 import java.util.function.*;
 
-
 class Product {
   private final int id;
-  private String description;
+  private final String description;
   private double price;
   Product(int idNumber, String descr, double price) {
     id = idNumber;
     description = descr;
     this.price = price;
-    System.out.println(toString());
+    System.out.println(this);
   }
-  @Override public String toString() {
+  @Override
+  public String toString() {
     return id + ": " + description +
       ", price: $" + price;
   }
@@ -26,7 +32,7 @@ class Product {
   }
   public static Supplier<Product> generator =
     new Supplier<Product>() {
-      private Random rand = new Random(47);
+      private final Random rand = new Random(47);
       @Override public Product get() {
         return new Product(rand.nextInt(1000), "Test",
           Math.round(

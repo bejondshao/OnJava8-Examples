@@ -2,14 +2,15 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-import java.lang.reflect.*;
+
+import java.lang.reflect.Array;
 
 public class GenericArrayWithTypeToken<T> {
   private T[] array;
   @SuppressWarnings("unchecked")
   public
   GenericArrayWithTypeToken(Class<T> type, int sz) {
-    array = (T[])Array.newInstance(type, sz);
+    array = (T[]) Array.newInstance(type, sz);
   }
   public void put(int index, T item) {
     array[index] = item;
@@ -23,5 +24,9 @@ public class GenericArrayWithTypeToken<T> {
         Integer.class, 10);
     // This now works:
     Integer[] ia = gai.rep();
+    System.out.println(ia);
   }
 }
+/**
+ * [Ljava.lang.Integer;@372f7a8d
+ */

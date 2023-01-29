@@ -14,3 +14,10 @@ class Cat
 
   public int compareTo(Cat arg) { return 0; }
 }
+
+class Cat2 extends ComparablePet implements Comparable<ComparablePet> {
+
+  public int compareTo(Cat2 arg) {
+    return 0;
+  }
+}

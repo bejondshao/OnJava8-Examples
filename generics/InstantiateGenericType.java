@@ -19,17 +19,17 @@ class ClassAsFactory<T> implements Supplier<T> {
   }
 }
 
-class Employee {
-  public Employee() {}
+class Employee1 {
+  public Employee1() {}
   @Override public String toString() {
-    return "Employee";
+    return "Employee1";
   }
 }
 
 public class InstantiateGenericType {
   public static void main(String[] args) {
-    ClassAsFactory<Employee> fe =
-      new ClassAsFactory<>(Employee.class);
+    ClassAsFactory<Employee1> fe =
+      new ClassAsFactory<>(Employee1.class);
     System.out.println(fe.get());
     ClassAsFactory<Integer> fi =
       new ClassAsFactory<>(Integer.class);
@@ -41,7 +41,7 @@ public class InstantiateGenericType {
   }
 }
 /* Output:
-Employee
+Employee1
 java.lang.NoSuchMethodException:
 java.lang.Integer.<init>()
 */

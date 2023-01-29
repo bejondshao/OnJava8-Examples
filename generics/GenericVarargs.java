@@ -5,17 +5,15 @@
 import java.util.*;
 
 public class GenericVarargs {
+
   @SafeVarargs
   public static <T> List<T> makeList(T... args) {
-    List<T> result = new ArrayList<>();
-    for(T item : args)
-      result.add(item);
-    return result;
+    return new ArrayList<>(Arrays.asList(args));
   }
   public static void main(String[] args) {
     List<String> ls = makeList("A");
     System.out.println(ls);
-    ls = makeList("A", "B", "C");
+    ls = makeList("B", "C", "D");
     System.out.println(ls);
     ls = makeList(
       "ABCDEFFHIJKLMNOPQRSTUVWXYZ".split(""));
@@ -24,7 +22,7 @@ public class GenericVarargs {
 }
 /* Output:
 [A]
-[A, B, C]
+[B, C, D]
 [A, B, C, D, E, F, F, H, I, J, K, L, M, N, O, P, Q, R,
 S, T, U, V, W, X, Y, Z]
 */
