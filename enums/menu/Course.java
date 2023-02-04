@@ -4,7 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 package menu;
 
-
 public enum Course {
   APPETIZER(Food.Appetizer.class),
   MAINCOURSE(Food.MainCourse.class),

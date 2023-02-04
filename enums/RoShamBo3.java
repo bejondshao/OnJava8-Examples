@@ -5,16 +5,14 @@
 // Using constant-specific methods
 // {java enums.RoShamBo3}
 
-import static enums.Outcome.*;
-
 public enum RoShamBo3 implements Competitor<RoShamBo3> {
   PAPER {
     @Override public Outcome compete(RoShamBo3 it) {
       switch(it) {
         default: // To placate the compiler
-        case PAPER: return DRAW;
-        case SCISSORS: return LOSE;
-        case ROCK: return WIN;
+        case PAPER: return Outcome.DRAW;
+        case SCISSORS: return Outcome.LOSE;
+        case ROCK: return Outcome.WIN;
       }
     }
   },
@@ -22,9 +20,9 @@ public enum RoShamBo3 implements Competitor<RoShamBo3> {
     @Override public Outcome compete(RoShamBo3 it) {
       switch(it) {
         default:
-        case PAPER: return WIN;
-        case SCISSORS: return DRAW;
-        case ROCK: return LOSE;
+        case PAPER: return Outcome.WIN;
+        case SCISSORS: return Outcome.DRAW;
+        case ROCK: return Outcome.LOSE;
       }
     }
   },
@@ -32,9 +30,9 @@ public enum RoShamBo3 implements Competitor<RoShamBo3> {
     @Override public Outcome compete(RoShamBo3 it) {
       switch(it) {
         default:
-        case PAPER: return LOSE;
-        case SCISSORS: return WIN;
-        case ROCK: return DRAW;
+        case PAPER: return Outcome.LOSE;
+        case SCISSORS: return Outcome.WIN;
+        case ROCK: return Outcome.DRAW;
       }
     }
   };

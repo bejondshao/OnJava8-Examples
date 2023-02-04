@@ -112,10 +112,14 @@ public class VendingMachine {
     }
   }
   public static void main(String[] args) {
-    Supplier<Input> gen = new RandomInputSupplier();
-    if(args.length == 1)
-      gen = new FileInputSupplier(args[0]);
-    run(gen);
+    if (args.length > 0) { // Bruce has a habit of omitting braces. Here it is a "bug".
+                           // run(gen) should not run if the args.length is 0, or it will run endless. He intended to
+                           // do this, but it's not good to be an example.
+      Supplier<Input> gen = new FileInputSupplier(args[0]);
+      run(gen);
+    } else {
+      System.out.println("arguments length is 0");
+    }
   }
 }
 
@@ -131,7 +135,7 @@ class FileInputSupplier implements Supplier<Input> {
   private Iterator<String> input;
   FileInputSupplier(String fileName) {
     try {
-      input = Files.lines(Paths.get(fileName))
+      input = Files.lines(Paths.get(Constants.BASE_PATH + fileName))
         .skip(1) // Skip the comment line
         .flatMap(s -> Arrays.stream(s.split(";")))
         .map(String::trim)

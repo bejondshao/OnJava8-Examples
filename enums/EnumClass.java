@@ -26,6 +26,8 @@ public class EnumClass {
       Shrubbery shrub =
         Enum.valueOf(Shrubbery.class, s);
       System.out.println(shrub);
+      Shrubbery shrub2 = Shrubbery.valueOf(s);
+      System.out.println(shrub2);
     }
   }
 }
@@ -46,6 +48,9 @@ class Shrubbery
 HANGING
 ********************
 HANGING
+HANGING
 CRAWLING
+CRAWLING
+GROUND
 GROUND
 */

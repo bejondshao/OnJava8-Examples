@@ -5,14 +5,12 @@
 // Enums using "tables" instead of multiple dispatch
 // {java enums.RoShamBo6}
 
-import static enums.Outcome.*;
-
 enum RoShamBo6 implements Competitor<RoShamBo6> {
   PAPER, SCISSORS, ROCK;
   private static Outcome[][] table = {
-    { DRAW, LOSE, WIN }, // PAPER
-    { WIN, DRAW, LOSE }, // SCISSORS
-    { LOSE, WIN, DRAW }, // ROCK
+    { Outcome.DRAW, Outcome.LOSE, Outcome.WIN }, // PAPER
+    { Outcome.WIN, Outcome.DRAW, Outcome.LOSE }, // SCISSORS
+    { Outcome.LOSE, Outcome.WIN, Outcome.DRAW }, // ROCK
   };
   @Override public Outcome compete(RoShamBo6 other) {
     return table[this.ordinal()][other.ordinal()];

@@ -4,13 +4,19 @@
 // Visit http://OnJava8.com for more book information.
 // {java enums.menu.TypeOfFood}
 package menu;
-import static enums.menu.Food.*;
+import static menu.Food.*;
 
 public class TypeOfFood {
   public static void main(String[] args) {
     Food food = Appetizer.SALAD;
+    System.out.println(food);
     food = MainCourse.LASAGNE;
+    System.out.println(food);
     food = Dessert.GELATO;
     food = Coffee.CAPPUCCINO;
   }
 }
+/**
+ * SALAD
+ * LASAGNE
+ */

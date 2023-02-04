@@ -4,6 +4,8 @@
 // Visit http://OnJava8.com for more book information.
 
 
+import menu.Enums;
+
 enum Activity { SITTING, LYING, STANDING, HOPPING,
   RUNNING, DODGING, JUMPING, FALLING, FLYING }
 

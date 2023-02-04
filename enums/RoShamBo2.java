@@ -5,12 +5,10 @@
 // Switching one enum on another
 // {java enums.RoShamBo2}
 
-import static enums.Outcome.*;
-
 public enum RoShamBo2 implements Competitor<RoShamBo2> {
-  PAPER(DRAW, LOSE, WIN),
-  SCISSORS(WIN, DRAW, LOSE),
-  ROCK(LOSE, WIN, DRAW);
+  PAPER(Outcome.DRAW, Outcome.LOSE, Outcome.WIN),
+  SCISSORS(Outcome.WIN, Outcome.DRAW, Outcome.LOSE),
+  ROCK(Outcome.LOSE, Outcome.WIN, Outcome.DRAW);
   private Outcome vPAPER, vSCISSORS, vROCK;
   RoShamBo2(Outcome paper,
     Outcome scissors, Outcome rock) {

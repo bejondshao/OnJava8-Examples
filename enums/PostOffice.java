@@ -3,8 +3,9 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Modeling a post office
-import java.util.*;
+import menu.Enums;
 
+import java.util.*;
 
 class Mail {
   // The NO's reduce probability of random selection:

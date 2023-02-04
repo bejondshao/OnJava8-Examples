@@ -5,6 +5,7 @@
 // Common tools for RoShamBo examples
 
 
+import menu.Enums;
 
 public class RoShamBo {
   public static <T extends Competitor<T>>

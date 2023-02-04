@@ -6,7 +6,6 @@
 // {java enums.RoShamBo5}
 
 import java.util.*;
-import static enums.Outcome.*;
 
 enum RoShamBo5 implements Competitor<RoShamBo5> {
   PAPER, SCISSORS, ROCK;
@@ -15,9 +14,9 @@ enum RoShamBo5 implements Competitor<RoShamBo5> {
   static {
     for(RoShamBo5 it : RoShamBo5.values())
       table.put(it, new EnumMap<>(RoShamBo5.class));
-    initRow(PAPER, DRAW, LOSE, WIN);
-    initRow(SCISSORS, WIN, DRAW, LOSE);
-    initRow(ROCK, LOSE, WIN, DRAW);
+    initRow(PAPER, Outcome.DRAW, Outcome.LOSE, Outcome.WIN);
+    initRow(SCISSORS, Outcome.WIN, Outcome.DRAW, Outcome.LOSE);
+    initRow(ROCK, Outcome.LOSE, Outcome.WIN, Outcome.DRAW);
   }
   static void initRow(RoShamBo5 it,
     Outcome vPAPER, Outcome vSCISSORS, Outcome vROCK) {

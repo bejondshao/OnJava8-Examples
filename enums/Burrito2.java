@@ -4,8 +4,6 @@
 // Visit http://OnJava8.com for more book information.
 // {java enums.Burrito2}
 
-import static enums.SpicinessEnum.*;
-
 public class Burrito2 {
   SpicinessEnum degree;
   public Burrito2(SpicinessEnum degree) {
@@ -15,9 +13,9 @@ public class Burrito2 {
     return "Burrito is "+ degree;
   }
   public static void main(String[] args) {
-    System.out.println(new Burrito2(NOT));
-    System.out.println(new Burrito2(MEDIUM));
-    System.out.println(new Burrito2(HOT));
+    System.out.println(new Burrito2(SpicinessEnum.NOT));
+    System.out.println(new Burrito2(SpicinessEnum.MEDIUM));
+    System.out.println(new Burrito2(SpicinessEnum.HOT));
   }
 }
 /* Output:

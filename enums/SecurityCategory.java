@@ -5,6 +5,8 @@
 // More succinct subcategorization of enums
 
 
+import menu.Enums;
+
 enum SecurityCategory {
   STOCK(Security.Stock.class),
   BOND(Security.Bond.class);

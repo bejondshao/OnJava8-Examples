@@ -5,7 +5,6 @@
 // {java enums.menu.Meal2}
 package menu;
 
-
 public enum Meal2 {
   APPETIZER(Food.Appetizer.class),
   MAINCOURSE(Food.MainCourse.class),
