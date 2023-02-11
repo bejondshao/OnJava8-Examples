@@ -85,21 +85,21 @@ public class TableCreator {
   }
 }
 /* Output:
-Table Creation SQL for annotations.database.Member is:
+Table Creation SQL for database.Member is:
 CREATE TABLE MEMBER(
-    FIRSTNAME VARCHAR(30));
-Table Creation SQL for annotations.database.Member is:
+    FN VARCHAR(30));
+Table Creation SQL for database.Member is:
 CREATE TABLE MEMBER(
-    FIRSTNAME VARCHAR(30),
+    FN VARCHAR(30),
     LASTNAME VARCHAR(50));
-Table Creation SQL for annotations.database.Member is:
+Table Creation SQL for database.Member is:
 CREATE TABLE MEMBER(
-    FIRSTNAME VARCHAR(30),
+    FN VARCHAR(30),
     LASTNAME VARCHAR(50),
     AGE INT);
-Table Creation SQL for annotations.database.Member is:
+Table Creation SQL for database.Member is:
 CREATE TABLE MEMBER(
-    FIRSTNAME VARCHAR(30),
+    FN VARCHAR(30),
     LASTNAME VARCHAR(50),
     AGE INT,
     REFERENCE VARCHAR(30) PRIMARY KEY);

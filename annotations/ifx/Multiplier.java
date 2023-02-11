@@ -14,6 +14,9 @@ public class Multiplier {
     int total = 0;
     for(int i = 0; i < x; i++)
       total = add(total, y);
+    StringBuilder stringBuilder = new StringBuilder();
+    stringBuilder.append(x).append(" * ").append(y).append(" = ").append(total);
+    System.out.println(stringBuilder);
     return total;
   }
   public int fortySeven() { return 47; }
@@ -25,8 +28,7 @@ public class Multiplier {
   }
   public static void main(String[] args) {
     Multiplier m = new Multiplier();
-    System.out.println(
-      "11 * 16 = " + m.multiply(11, 16));
+    m.multiply(11, 16);
   }
 }
 /* Output:
