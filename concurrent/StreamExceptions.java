@@ -2,8 +2,8 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-import java.util.concurrent.*;
-import java.util.stream.*;
+
+import java.util.stream.Stream;
 
 public class StreamExceptions {
   static Stream<Breakable>
@@ -33,8 +33,8 @@ public class StreamExceptions {
 }
 /* Output:
 Entering try
-Breakable_C [2]
-Breakable_C [1]
+No exception. Breakable_C [2]
+No exception. Breakable_C [1]
 Throwing Exception for C
 Breakable_C failed
 */

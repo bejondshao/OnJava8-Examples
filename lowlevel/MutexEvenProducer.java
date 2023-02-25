@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Preventing thread collisions with mutexes
 import java.util.concurrent.locks.*;
-import Nap;
+
 
 public class MutexEvenProducer extends IntGenerator {
   private int currentEvenValue = 0;

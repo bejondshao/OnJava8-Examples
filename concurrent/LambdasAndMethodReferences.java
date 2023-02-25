@@ -19,15 +19,16 @@ class NotCallable {
 
 public class LambdasAndMethodReferences {
   public static void main(String[] args)
-    throws InterruptedException {
+          throws InterruptedException, ExecutionException {
     ExecutorService exec =
       Executors.newCachedThreadPool();
-    exec.submit(() -> System.out.println("Lambda1"));
-    exec.submit(new NotRunnable()::go);
-    exec.submit(() -> {
+    exec.execute(() -> System.out.println("Lambda1"));
+    exec.execute(new NotRunnable()::go);
+    Future<Integer> in = exec.submit(() -> {
       System.out.println("Lambda2");
       return 1;
     });
+    System.out.println(in.get());
     exec.submit(new NotCallable()::get);
     exec.shutdown();
   }
@@ -36,5 +37,6 @@ public class LambdasAndMethodReferences {
 Lambda1
 NotRunnable
 Lambda2
+1
 NotCallable
 */

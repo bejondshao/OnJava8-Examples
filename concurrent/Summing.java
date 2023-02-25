@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.stream.*;
 import java.util.function.*;
-import Timer;
+
 
 public class Summing {
   static void timeTest(String id, long checkValue,

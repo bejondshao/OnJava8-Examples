@@ -5,7 +5,6 @@
 import java.util.*;
 import java.util.stream.*;
 import java.util.concurrent.*;
-import Nap;
 
 public class QuittingTasks {
   public static final int COUNT = 150;

@@ -2,7 +2,8 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-import java.util.concurrent.*;
+
+import java.util.concurrent.CompletableFuture;
 
 public class CompletableApply {
   public static void main(String[] args) {
@@ -17,11 +18,14 @@ public class CompletableApply {
       cf3.thenApply(Machina::work);
     CompletableFuture<Machina> cf5 =
       cf4.thenApply(Machina::work);
+    CompletableFuture<Machina> cf6 =
+      cf5.thenApply(Machina::work);
   }
 }
 /* Output:
 Machina0: ONE
 Machina0: TWO
 Machina0: THREE
+Machina0: complete
 Machina0: complete
 */

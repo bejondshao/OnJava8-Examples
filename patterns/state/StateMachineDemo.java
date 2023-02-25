@@ -6,7 +6,7 @@
 // {java patterns.state.StateMachineDemo}
 package patterns.state;
 import java.util.*;
-import Nap;
+
 
 interface State {
   void run();

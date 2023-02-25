@@ -3,9 +3,8 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {VisuallyInspectOutput}
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.stream.*;
+
+import java.util.stream.IntStream;
 
 public class CountingStream {
   public static void main(String[] args) {
@@ -13,7 +12,7 @@ public class CountingStream {
       IntStream.range(0, 10)
         .parallel()
         .mapToObj(CountingTask::new)
-        .map(ct -> ct.call())
+        .map(CountingTask::call)
         .reduce(0, Integer::sum));
   }
 }

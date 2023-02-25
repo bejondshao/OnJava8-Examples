@@ -21,11 +21,11 @@ public class CompletableApplyAsync {
   }
 }
 /* Output:
-103
+12
 Machina0: ONE
 Machina0: TWO
 Machina0: THREE
 Machina0: complete
 Machina0: complete
-545
+442
 */

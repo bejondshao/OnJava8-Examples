@@ -6,7 +6,7 @@
 import java.util.*;
 import java.util.stream.*;
 import java.util.concurrent.*;
-import Nap;
+
 
 class DualSynch {
   ConcurrentLinkedQueue<String> trace =

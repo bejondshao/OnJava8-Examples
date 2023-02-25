@@ -6,7 +6,7 @@
 // {ExcludeFromGradle} Gradle has trouble
 import java.util.*;
 import java.util.concurrent.*;
-import Nap;
+
 
 public class DiningPhilosophers {
   private StickHolder[] sticks;
@@ -28,6 +28,6 @@ public class DiningPhilosophers {
     // Returns right away:
     new DiningPhilosophers(5);               // [4]
     // Keeps main() from exiting:
-    new Nap(3, "Shutdown");
+    new Nap(10, "Shutdown");
   }
 }

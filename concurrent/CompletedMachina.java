@@ -11,9 +11,18 @@ public class CompletedMachina {
         new Machina(0));
     try {
       Machina m = cf.get();  // Doesn't block
+      System.out.println(m);
+      cf.thenApply(Machina::work);
+      cf.thenApply(Machina::work);
     } catch(InterruptedException |
             ExecutionException e) {
       throw new RuntimeException(e);
     }
   }
 }
+
+/**
+ * Machina0: START
+ * Machina0: ONE
+ * Machina0: TWO
+ */

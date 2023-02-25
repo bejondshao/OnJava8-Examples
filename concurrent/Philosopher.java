@@ -20,6 +20,7 @@ public class Philosopher implements Runnable {
       // System.out.println("Thinking");   // [1]
       right.pickUp();
       left.pickUp();
+      new Nap(1);
       System.out.println(this + " eating");
       right.putDown();
       left.putDown();

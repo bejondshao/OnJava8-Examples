@@ -7,7 +7,6 @@ import java.util.stream.*;
 import static java.util.stream.LongStream.*;
 import java.io.*;
 import java.nio.file.*;
-import Timer;
 
 public class ParallelPrime {
   static final int COUNT = 100_000;
@@ -26,10 +25,14 @@ public class ParallelPrime {
         .mapToObj(Long::toString)
         .collect(Collectors.toList());
     System.out.println(timer.duration());
-    Files.write(Paths.get("primes.txt"), primes,
+    Files.write(Paths.get(Constants.BASE_PATH + "primes.txt"), primes,
       StandardOpenOption.CREATE);
   }
 }
 /* Output:
-1635
+510
 */
+
+/** non parallel
+ * 941
+ */

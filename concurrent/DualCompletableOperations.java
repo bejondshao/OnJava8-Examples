@@ -3,7 +3,6 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 import java.util.concurrent.*;
-import static CompletableUtilities.*;
 
 public class DualCompletableOperations {
   static CompletableFuture<Workable> cfA, cfB;
@@ -18,37 +17,37 @@ public class DualCompletableOperations {
   }
   public static void main(String[] args) {
     init();
-    voidr(cfA.runAfterEitherAsync(cfB, () ->
+    CompletableUtilities.voidr(cfA.runAfterEitherAsync(cfB, () ->
       System.out.println("runAfterEither")));
     join();
 
     init();
-    voidr(cfA.runAfterBothAsync(cfB, () ->
+    CompletableUtilities.voidr(cfA.runAfterBothAsync(cfB, () ->
       System.out.println("runAfterBoth")));
     join();
 
     init();
-    showr(cfA.applyToEitherAsync(cfB, w -> {
+    CompletableUtilities.showr(cfA.applyToEitherAsync(cfB, w -> {
       System.out.println("applyToEither: " + w);
       return w;
     }));
     join();
 
     init();
-    voidr(cfA.acceptEitherAsync(cfB, w -> {
+    CompletableUtilities.voidr(cfA.acceptEitherAsync(cfB, w -> {
       System.out.println("acceptEither: " + w);
     }));
     join();
 
     init();
-    voidr(cfA.thenAcceptBothAsync(cfB, (w1, w2) -> {
+    CompletableUtilities.voidr(cfA.thenAcceptBothAsync(cfB, (w1, w2) -> {
       System.out.println("thenAcceptBoth: "
         + w1 + ", " + w2);
     }));
     join();
 
     init();
-    showr(cfA.thenCombineAsync(cfB, (w1, w2) -> {
+    CompletableUtilities.showr(cfA.thenCombineAsync(cfB, (w1, w2) -> {
       System.out.println("thenCombine: "
         + w1 + ", " + w2);
       return w1;

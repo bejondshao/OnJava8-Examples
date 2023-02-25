@@ -2,18 +2,18 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-import java.util.concurrent.*;
-import java.util.stream.*;
-import Nap;
+
+import java.util.concurrent.CompletableFuture;
+import java.util.stream.Stream;
 
 public class Baked {
   static class Pan {}
   static Pan pan(Batter b) {
-    new Nap(0.1);
+    new Nap(1);
     return new Pan();
   }
   static Baked heat(Pan p) {
-    new Nap(0.1);
+    new Nap(5);
     return new Baked();
   }
   static CompletableFuture<Baked>

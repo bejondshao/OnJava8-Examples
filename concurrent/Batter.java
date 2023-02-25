@@ -2,8 +2,8 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-import java.util.concurrent.*;
-import Nap;
+
+import java.util.concurrent.CompletableFuture;
 
 public class Batter {
   static class Eggs {}
@@ -11,7 +11,7 @@ public class Batter {
   static class Sugar {}
   static class Flour {}
   static <T> T prepare(T ingredient) {
-    new Nap(0.1);
+    new Nap(1);
     return ingredient;
   }
   static <T> CompletableFuture<T> prep(T ingredient) {
@@ -27,7 +27,7 @@ public class Batter {
     CompletableFuture
       .allOf(eggs, milk, sugar, flour)
       .join();
-    new Nap(0.1); // Mixing time
+    new Nap(2); // Mixing time
     return
       CompletableFuture.completedFuture(new Batter());
   }
