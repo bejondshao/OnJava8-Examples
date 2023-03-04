@@ -7,7 +7,7 @@ final class IntegerSingleton
   implements Resource<Integer> {
   private static IntegerSingleton value =
     new IntegerSingleton();
-  private Integer i = Integer.valueOf(0);
+  private Integer i = 0;
   private IntegerSingleton() {
     System.out.println("IntegerSingleton()");
   }
@@ -35,7 +35,7 @@ public class SingletonPattern {
     Resource<Integer> ir2 =
       IntegerSingleton.instance();
     show(ir);
-    put(ir2, Integer.valueOf(9));
+    put(ir2, 9);
     show(ir);
   }
 }

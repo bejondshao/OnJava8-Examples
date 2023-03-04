@@ -5,12 +5,11 @@
 // Demonstration of the Observer pattern using
 // Java's built-in observer classes.
 // {ExcludeFromGradle} // Won't work under WSL2
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-
-import MouseClick;
+import java.util.Observable;
+import java.util.Observer;
 
 @SuppressWarnings("deprecation")
 class Boxes extends JFrame {

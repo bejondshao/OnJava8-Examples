@@ -3,17 +3,12 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Demonstration of multiple dispatching.
-import java.util.*;
-import java.util.function.*;
-import java.util.stream.*;
-import enums.Outcome;
-import static enums.Outcome.*;
-import enums.Item;
-import enums.Paper;
-import enums.Scissors;
-import enums.Rock;
 
-import static Tuple.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.SplittableRandom;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 class ItemFactory {
   static List<Supplier<Item>> items =
@@ -26,7 +21,7 @@ class ItemFactory {
     return items.get(rand.nextInt(SZ)).get();
   }
   public static Tuple2<Item,Item> newPair() {
-    return tuple(newItem(), newItem());
+    return Tuple.tuple(newItem(), newItem());
   }
 }
 

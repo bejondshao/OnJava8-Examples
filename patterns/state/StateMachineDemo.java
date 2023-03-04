@@ -4,16 +4,16 @@
 // Visit http://OnJava8.com for more book information.
 // The State Machine pattern.
 // {java patterns.state.StateMachineDemo}
-package patterns.state;
+package state;
 import java.util.*;
 
 
-interface State {
+interface State1 {
   void run();
 }
 
 abstract class StateMachine {
-  protected State currentState;
+  protected State1 currentState;
   protected abstract boolean changeState();
   // Template method:
   protected final void runAll() {
@@ -24,21 +24,21 @@ abstract class StateMachine {
 
 // A different subclass for each state:
 
-class Wash implements State {
+class Wash implements State1 {
   @Override public void run() {
     System.out.println("Washing");
     new Nap(0.5);
   }
 }
 
-class Spin implements State {
+class Spin implements State1 {
   @Override public void run() {
     System.out.println("Spinning");
     new Nap(0.5);
   }
 }
 
-class Rinse implements State {
+class Rinse implements State1 {
   @Override public void run() {
     System.out.println("Rinsing");
     new Nap(0.5);
@@ -47,7 +47,7 @@ class Rinse implements State {
 
 class Washer extends StateMachine {
   private int i = 0;
-  private Iterator<State> states =
+  private Iterator<State1> states =
     Arrays.asList(
       new Wash(), new Spin(),
       new Rinse(), new Spin()

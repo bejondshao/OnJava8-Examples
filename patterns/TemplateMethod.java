@@ -3,7 +3,8 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Basic Template Method pattern.
-import java.util.stream.*;
+
+import java.util.stream.IntStream;
 
 abstract class ApplicationFramework {
   ApplicationFramework() {
